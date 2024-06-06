@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./materialize.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="introduction">
+            <div class="row">
+                <div class="col s12 l6">
+                    <div style="font-weight: bolder; font-size: xx-large;">{{user.fullName}}</div>
+                </div>
+                <div class="col s12 l6">
+                    <img src="./images/{{user.photo}}" style="width: 300px; height: 300px; margin-top: 20px;">
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <h1>{{city.heading}}</h1>
+        <section class="city">
+            <div class="row">
+                <div class="col s12 l6">
+                    <img src="./images/{{city.photo}}" style="width: 300px;height: 200px;">
+                </div>
+                <div class="col s12 l6">
+                    <h3>{{city.name}}</h3>
+                    <div style="font-size: medium;">{{city.language}}</div>
+                    <div>{{city.description}}</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <h1>{{foreignLanguage.heading}}</h1>
+        <section class="language">
+            <h3 style="text-decoration: underline;">{{foreignLanguage.language}}</h3>
+            <div>{{foreignLanguage.description}}</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-decoration: underline;">ENGLISH</th>
+                        <th style="text-decoration: underline;">PORTUGUESE</th>
+                    </tr>
+                </thead>
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{englishPhrase}}</td>
+                    <td>{{foreignLanguage}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </section>
+
+        <div class="divider"></div>
+
+        <h1>{{subjects.heading}}</h1>
+        <section class="row subjects">
+            <div style="font-weight: bolder; font-style: italic;">{{subjects.description}}</div>
+            <div class="row">
+                {{#each subjects.favouriteSubjects}}
+                <div class="col s12 l4">
+                    <div style="font-size: medium; font-weight: bold; text-decoration: underline;">{{name}}</div>
+                    <img src="./images/{{photo}}" style="width:300px;height: 200px;">
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="hisconainer">
+            <h1>{{history.heading}}</h1>
+            <div class="row history">
+                <div class="col s12 l12">
+                        {{#each history.historicPlaces}}
+                    <div class="col s12 l4">
+                        <div class="col m6 s6 {{position}}">
+                            <img src="./images/{{photo}}" class="responsive-img">
+                        </div>
+
+                        <div class="col m6 s6">
+                            <div style="font-size: large; font-weight: bold; text-decoration: underline;">{{name}}</div>
+                            <ul>
+                                {{#each interest}}
+                                <li>{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        </container>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+{
+    "user": {
+        "fullName": "LESEGO MODISE",
+        "photo": "CT PIC.jpg"
+    },
+    "city": {
+        "heading": "DESTINATION",
+        "name": "Belize",
+        "language":"pronounced: 'buh leez'",
+        "photo": "Belize.jpg",
+        "description": "Not only will I get to swim in the beautiful beaches in Belize but I would get to dive deep into the rich culture of the Mayan and Mestizo traditions who offer the most intriguing music, dance and food. Belize has amazing wildlife ranging from our jaguars, howler monkeys and birds. I know I will have the time of my life as it offers world class diving and snorkeling activities as well as a variety of adventure activities such as, zip lining and cave tubing down in their underground rivers."
+    },
+    "foreignLanguage": {
+        "heading": "FOREIGN LANGUAGE",
+        "language": "PORTUGUESE",
+        "description": "Learning Portuguese will help me a lot when I start travelling as it is mostly spoken. It will also be a stepping stone to the many languages I am yet to learn.",
+        "phrases": [
+            {
+                "englishPhrase": "Hello",
+                "foreignLanguage": "Olá"
+            },
+            {
+                "englishPhrase": "Goodbye",
+                "foreignLanguage": "Adeus"
+            },
+            {
+                "englishPhrase": "Beautiful",
+                "foreignLanguage": "Linda"
+            },
+            {
+                "englishPhrase": "How are you?",
+                "foreignLanguage": "Como vai você?"
+            },
+            {
+                "englishPhrase": "Are you hungry?",
+                "foreignLanguage": "Está com fome?"
+            }
+        ]
+    },
+    "subjects": {
+        "heading": "FAVOURITE SUBJECTS",
+        "description":"Qualification: B.Com Honours in Information and Knowledge Management Institution: University of Johannesburg",
+        "favouriteSubjects": [
+            {
+                "name": "Competitive Intelligence",
+                "photo": "CI.jpg"
+            },
+            {
+                "name": "Business Intelligence",
+                "photo": "BI.jpeg"
+            },
+            {
+                "name": "Electronic Records Management",
+                "photo": "ERM.jpg"
+            }
+        ]
+    },
+    "history": {
+        "heading": "HISTORIC PLACES",
+        "historicPlaces": [
+            {
+                "name": "Apartheid Museum",
+                "interest": ["Interactive Exhibit", "Historical Artefacts", "Hector Pieterson Memorial"],
+                "photo": "apatheid-museum.jpg",
+                "position": "photo1"
+            },
+            {
+                "name": "Constitutional Hill",
+                "interest": ["Historical Significance", "Exhibitions and Museums", "Art and Architecture"],
+                "photo": "Constitution Hill.jpg"
+            },
+            {
+                "name": "Soweto",
+                "interest": ["Cultural Hub", "Food Cuisines", "Tourist Attractions"],
+                "photo": "soweto.jpeg",
+                "position": "photo1"
+            }
+
+        ]
+    }    
+
+}
