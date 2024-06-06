@@ -17,7 +17,7 @@ h1 {
 }
 
 .introduction {
-  background-image: url(/images/best-views-of-table-mountain.webp);
+  background-image: url(./images/best-views-of-table-mountain.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
