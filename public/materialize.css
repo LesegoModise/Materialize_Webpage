@@ -56,6 +56,10 @@ h1, .intro {
     padding: 35px;
     padding-left: 0.15%  ;
   }
+  .sup-pic {
+    width: 250px;
+    height: 200px;
+  }
   .intro-pic {
     padding: 35px;
     padding-left: 0.15%;
