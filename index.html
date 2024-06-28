@@ -14,26 +14,26 @@
         <section class="introduction">
             <div class="row">
                 <div class="col s12 l6">
-                    <div style="font-weight: bolder; font-size: xx-large;">{{user.fullName}}</div>
+                    <div style="font-weight: bolder; font-size: xx-large;" class="intro">{{user.fullName}}</div>
                 </div>
                 <div class="col s12 l6">
-                    <img src="./images/{{user.photo}}" style="width: 300px; height: 300px; margin-top: 20px;">
+                    <img src="./images/{{user.photo}}" style="width: 300px; height: 300px; margin-top: 20px;" class="intro-pic">
                 </div>
             </div>
         </section>
 
         <div class="divider"></div>
 
-        <h1>{{city.heading}}</h1>
+        <h1 class="desti">{{city.heading}}</h1>
         <section class="city">
             <div class="row">
                 <div class="col s12 l6">
-                    <img src="./images/{{city.photo}}" style="width: 300px;height: 200px;">
+                    <img src="./images/{{city.photo}}" style="width: 300px;height: 200px;" class="city-pic">
                 </div>
                 <div class="col s12 l6">
                     <h3>{{city.name}}</h3>
-                    <div style="font-size: medium;">{{city.language}}</div>
-                    <div>{{city.description}}</div>
+                    <div style="font-size: medium; font-weight: bold;">{{city.language}}</div>
+                    <div style="text-align: justify;">{{city.description}}</div>
                 </div>
             </div>
         </section>
@@ -43,7 +43,7 @@
         <h1>{{foreignLanguage.heading}}</h1>
         <section class="language">
             <h3 style="text-decoration: underline;">{{foreignLanguage.language}}</h3>
-            <div>{{foreignLanguage.description}}</div>
+            <div style="text-align: justify; padding: 0.5em;">{{foreignLanguage.description}}</div>
             <table>
                 <thead>
                     <tr>
@@ -69,7 +69,7 @@
                 {{#each subjects.favouriteSubjects}}
                 <div class="col s12 l4">
                     <div style="font-size: medium; font-weight: bold; text-decoration: underline;">{{name}}</div>
-                    <img src="./images/{{photo}}" style="width:300px;height: 200px;">
+                    <img src="./images/{{photo}}" style="width:250px;height: 150px;" class="sup-pic">
                 </div>
                 {{/each}}
             </div>
@@ -81,7 +81,7 @@
             <h1>{{history.heading}}</h1>
             <div class="row history">
                 <div class="col s12 l12">
-                        {{#each history.historicPlaces}}
+                    {{#each history.historicPlaces}}
                     <div class="col s12 l4">
                         <div class="col m6 s6 {{position}}">
                             <img src="./images/{{photo}}" class="responsive-img">

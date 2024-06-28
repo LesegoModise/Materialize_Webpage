@@ -9,11 +9,15 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
+h1, .intro {
   text-align: center;
   color: beige;
   border-color: beige;
   border: 3px solid beige;
+}
+
+.intro {
+  margin-top: 4.5em;
 }
 
 .introduction {
@@ -48,12 +52,33 @@ h1 {
   .photo1 {
     float: right !important;
   }
+  .sup-pic, .city-pic {
+    padding: 35px;
+    padding-left: 0.15%  ;
+  }
+  .intro-pic {
+    padding: 35px;
+    padding-left: 0.15%;
+  }
+  .intro {
+    margin: 5%;
+  }
+  .desti {
+    font-size: 2.8rem !important;
+  }
 }
 
 @media screen and (min-width: 600px) {
   .responsive-img {
     padding-top: 80px;
   }
+  .city-pic {
+    margin: 50px;
+  }
+  .intro-pic {
+    margin: 50px  ;
+  }
+  
 }
 
 
